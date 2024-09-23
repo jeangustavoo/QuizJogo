@@ -2,6 +2,8 @@ namespace QuizJogo;
 
 public class Gerenciador
 {
+    public int Pontuação{get; private set;}
+    int NivelAtual=0;
     List<Questao> ListaQuestoes=new List<Questao>();
     List<int> ListaQuestoesRespondidas=new List<int>();
     Questao QuestaoAtual;
@@ -43,8 +45,15 @@ public class Gerenciador
         if (QuestaoAtual.VerificaResposta(RR))
         {
             await Task.Delay(1000);
+            AdicionaPontuação(NivelAtual);
+            NivelAtual++;
             ProximaQuestao();
         }
+        else 
+    {
+        await App.Current.MainPage.DisplayAlert("Burro", "Fim","Ok");
+        Inicializar();
+    }
     }
 
     void ProximaQuestao()
@@ -56,5 +65,39 @@ public class Gerenciador
         ListaQuestoesRespondidas.Add(numAleat);
         QuestaoAtual=ListaQuestoes[numAleat];
         QuestaoAtual.desenhar();
+    }
+    void Inicializar()
+    {
+        Pontuação=0;
+        NivelAtual=1;
+        ProximaQuestao();
+    }
+
+    void AdicionaPontuação(int n)
+    {
+        if(n==1)
+            Pontuação=1000;
+        else if(n==2)
+            Pontuação=2000;
+        else if(n==3)
+            Pontuação=3000;
+        else if(n==4)
+            Pontuação=5000;
+        else if(n==5)
+            Pontuação=10000;
+        else if(n==5)
+            Pontuação=20000;
+        else if(n==6)
+            Pontuação=50000;
+        else if(n==7)
+            Pontuação=100000;
+        else if(n==8)
+            Pontuação=200000;
+        else if(n==9)
+            Pontuação=500000;
+        else 
+            Pontuação=1000000;
+
+
     }
 }
