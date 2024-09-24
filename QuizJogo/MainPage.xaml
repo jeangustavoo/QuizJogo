@@ -9,6 +9,7 @@
  <Grid
         RowSpacing="5">
         <Grid.RowDefinitions>
+         <RowDefinition Height="30"/>
          <RowDefinition Height="*"/>
          <RowDefinition Height="100"/>
          <RowDefinition Height="50"/>
@@ -24,9 +25,48 @@
          <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
+        
+        <Frame  x:Name="framePontuacao"
+                BorderColor="Black"
+                Padding="5"
+                Margin="10,0"
+                BackgroundColor="White"
+                CornerRadius="10"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2">
+
+            <Label x:Name="LabelPont"
+                   HorizontalTextAlignment="Start"
+                   Text="Pontuação:R$0"
+                   TextColor="Black"
+                   HorizontalOptions="Fill"
+                   FontSize="14"/>
+
+        </Frame>
+
+        <Frame  x:Name="frameNivel"
+                Padding="5"
+                BorderColor="Black"
+                BackgroundColor="White"
+                Margin="10,0"
+                CornerRadius="10"
+                Grid.Row="0"
+                Grid.Column="2">
+
+            <Label x:Name="LabelNivel"
+                   Text="Nível:1"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Start"
+                   HorizontalOptions="Fill"
+                   FontSize="14"/>
+
+        </Frame>
+
+
         <Image  Source="quizlogo1.png"
                 Aspect="AspectFill"
-                Grid.Row="0"
+                Grid.Row="1"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/>
 
@@ -36,14 +76,14 @@
                 BackgroundColor="White"
                 Margin="10,10,10,10"
                 CornerRadius="20"
-                Grid.Row="1"
+                Grid.Row="2"
                 Grid.Column="0"
                 Grid.ColumnSpan="3">
                 
             <Label  x:Name="Perguntas"
                     TextColor="Black"
                     HorizontalOptions="Center"
-                    FontSize="14"/>
+                    FontSize="17"/>
         </Frame>
 
         <Button x:Name="Resposta01"
@@ -53,9 +93,9 @@
                 BorderWidth="1"
                 BorderColor="Black"
                 TextColor="Black"
-                FontSize="12"
+                FontSize="15"
                 CornerRadius="15"
-                Grid.Row="2"
+                Grid.Row="3"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
                 Clicked="btnResposta01Clicked"/>
@@ -67,9 +107,9 @@
                 BorderWidth="1"
                 BorderColor="Black"
                 TextColor="Black"
-                FontSize="12"
+                FontSize="15"
                 CornerRadius="15"
-                Grid.Row="3"
+                Grid.Row="4"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
                 Clicked="btnResposta02Clicked"/>
@@ -81,9 +121,9 @@
                 BorderWidth="1"
                 BorderColor="Black"
                 TextColor="Black"
-                FontSize="12"
+                FontSize="15"
                 CornerRadius="15"
-                Grid.Row="4"
+                Grid.Row="5"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
                 Clicked="btnResposta03Clicked"/>
@@ -95,9 +135,9 @@
                 BorderWidth="1"
                 BorderColor="Black"
                 TextColor="Black"
-                FontSize="12"
+                FontSize="15"
                 CornerRadius="15"
-                Grid.Row="5"
+                Grid.Row="6"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
                 Clicked="btnResposta04Clicked"/>
@@ -109,9 +149,9 @@
                 BorderWidth="1"
                 BorderColor="Black"
                 TextColor="Black"
-                FontSize="12"
+                FontSize="15"
                 CornerRadius="15"
-                Grid.Row="6"
+                Grid.Row="7"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"
                 Clicked="btnResposta05Clicked"/>
@@ -123,7 +163,7 @@
                 BorderColor="Black"
                 BorderWidth="2"
                 TextColor="Black"
-                Grid.Row="7"
+                Grid.Row="8"
                 Grid.Column="0"/>
 
         <Button x:Name="Ajuda02"
@@ -133,7 +173,7 @@
                 BorderWidth="2"
                 BorderColor="Black"
                 TextColor="Black"
-                Grid.Row="7"
+                Grid.Row="8"
                 Grid.Column="1"/>
 
         <Button x:Name="Ajuda03"
@@ -143,7 +183,7 @@
                 BorderWidth="2"
                 BorderColor="Black"
                 TextColor="Black"
-                Grid.Row="7"
+                Grid.Row="8"
                 Grid.Column="2"/>
         
 
