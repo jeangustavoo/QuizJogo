@@ -1,9 +1,12 @@
-public class Questao
+public class Questao : IEquatable<Questao>
 {
+  public bool Equals (Questao q)
+  {
+    return this.Nivel == q.Nivel;
+  }
     public Questao()
-    {
+    
 
-    }
     public string pergunta { get; set; }
     public string resposta1 { get; set; }
     public string resposta2 { get; set; }
