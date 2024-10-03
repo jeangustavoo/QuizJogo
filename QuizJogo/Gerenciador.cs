@@ -275,13 +275,66 @@ public class Gerenciador
         Q23.nivelpergunta = 1;
         Q23.ConfigurarEstruturaDesenho(labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
         Q23.pergunta = "Qual seleção foi derrotada pelo Brasil na final da Copa do Mundo de 1970?";
-        Q23.resposta1 = "Alemanha Ocidental";
+        Q23.resposta1 = "Alemanha";
         Q23.resposta2 = "Itália";
         Q23.resposta3 = "Uruguai";
         Q23.resposta4 = "Argentina";
         Q23.resposta5 = "França";
         Q23.respostacorreta = 2;
         ListaQuestoes.Add(Q23);
+
+          var Q24 = new Questao();
+        Q24.nivelpergunta = 1;
+        Q24.ConfigurarEstruturaDesenho(labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
+        Q24.pergunta = "Em que ano o Brasil conquistou seu primeiro título da Copa do Mundo?";
+        Q24.resposta1 = "2002";
+        Q24.resposta2 = "1958";
+        Q24.resposta3 = "1984";
+        Q24.resposta4 = "1962";
+        Q24.resposta5 = "1970";
+        Q24.respostacorreta = 2;
+        ListaQuestoes.Add(Q24);
+
+         var Q25 = new Questao();
+        Q25.nivelpergunta = 1;
+        Q25.ConfigurarEstruturaDesenho(labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
+        Q25.pergunta = "Qual a torcida mais modinha?";
+        Q25.resposta1 = "flamemgo";
+        Q25.resposta2 = "Palmeiras";
+        Q25.resposta3 = "São paulo";
+        Q25.resposta4 = "Atletico Mineiro";
+        Q25.resposta5 = "Santos";
+        Q25.respostacorreta = 1;
+        ListaQuestoes.Add(Q25);
+
+          var Q26 = new Questao();
+        Q26.nivelpergunta = 1;
+        Q26.ConfigurarEstruturaDesenho(labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
+        Q26.pergunta = "Em qual edição da Copa do Mundo a Seleção Brasileira fez sua estreia?";
+        Q26.resposta1 = "1958";
+        Q26.resposta2 = "1934";
+        Q26.resposta3 = "1942";
+        Q26.resposta4 = "1930";
+        Q26.resposta5 = "1946";
+        Q26.respostacorreta = 4;
+        ListaQuestoes.Add(Q26);
+
+          var Q27 = new Questao();
+        Q27.nivelpergunta = 1;
+        Q27.ConfigurarEstruturaDesenho(labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
+        Q27.pergunta = "Qual foi o primeiro clube brasileiro a conquistar a Copa Libertadores?";
+        Q27.resposta1 = "Flamengo";
+        Q27.resposta2 = "Santos";
+        Q27.resposta3 = "São Paulo";
+        Q27.resposta4 = "Palmeiras";
+        Q27.resposta5 = "Internacional";
+        Q27.respostacorreta = 4;
+        ListaQuestoes.Add(Q27);
+
+
+
+
+
 
 
 
