@@ -367,10 +367,10 @@ public class Gerenciador
         LabelNivel.Text = "Nível:" + NivelAtual.ToString();
     }
 
-    void ProximaQuestao()
+    public void ProximaQuestao()
     {
         var listaQuestoes=ListaTodasQuestoes.Where(d=>d.nivelpergunta==NivelAtual).ToList();
-        var numRand = Random. Shared.Next(0, listaQuestoes.Count-1);
+        var numRand = Random.Shared.Next(0, listaQuestoes.Count-1);
         var novaQuestao=listaQuestoes[numRand];
         while (ListaQuestoesRespondidas.Contains(novaQuestao))
         {

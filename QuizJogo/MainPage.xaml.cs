@@ -1,8 +1,10 @@
-﻿﻿namespace QuizJogo;
+﻿namespace QuizJogo;
 
 public partial class MainPage : ContentPage
 {
 	  Gerenciador gerenciador;
+	  int pula=0;
+	  
 
 	public MainPage()
 	{
@@ -31,4 +33,16 @@ public partial class MainPage : ContentPage
 	{
 		gerenciador.VerificaResposta(5);
 	}
+	void ajudarbtnPular (object s,EventArgs e)
+	{
+		if (pula==2)
+		(s as Button).IsVisible = false;
+		else
+		{
+			gerenciador.ProximaQuestao();
+			pula++;
+		}
+		ajudarbtnPular
+		
+
 }

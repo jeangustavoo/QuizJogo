@@ -157,8 +157,9 @@
                 Clicked="btnResposta05Clicked"/>
 
         <Button x:Name="Ajuda01"
+                Clicked="ajudarbtnPular"
                 Margin="10,0,10,10"
-                Text="Cartas"
+                Text="Pular 3x"
                 BackgroundColor="White"
                 BorderColor="Black"
                 BorderWidth="2"
